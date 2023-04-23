@@ -37,7 +37,7 @@ const City = ({ weatherData }) => {
         <View style={[populationWrapper, rowLayout]}>
           <IconText
             iconName={'user'}
-            iconColor={'red'}
+            iconColor={'white'}
             bodyText={`Population: ${population}`}
             bodyTextStyles={populationText}
           />
@@ -88,11 +88,18 @@ const styles = StyleSheet.create({
   populationText: {
     fontSize: 25,
     marginLeft: 7.5,
-    color: 'red',
+    color: 'white',
   },
   riseSetWrapper: {
+    marginTop: 15,
+    padding: 20,
+    marginVertical: 16,
+    marginHorizontal: 32,
+    flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 30,
+    alignItems: 'center',
+    borderWidth: 5,
+    backgroundColor: 'indianred',
   },
   riseSetText: {
     fontSize: 20,
