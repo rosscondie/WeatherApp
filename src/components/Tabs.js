@@ -2,7 +2,6 @@ import React from 'react';
 import CurrentWeather from '../screens/CurrentWeather';
 import UpcomingWeather from '../screens/UpcomingWeather';
 import City from '../screens/City';
-
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons';
 
@@ -14,6 +13,17 @@ const Tabs = () => {
       screenOptions={{
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'grey',
+        tabBarStyle: {
+          backgroundColor: 'lightblue',
+        },
+        headerStyle: {
+          backgroundColor: 'lightblue',
+        },
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          fontSize: 25,
+          color: 'tomato',
+        },
       }}
     >
       <Tab.Screen
