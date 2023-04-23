@@ -7,7 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    '@react-native-community'
+    '@react-native-community',
   ],
   overrides: [],
   parserOptions: {
@@ -16,12 +16,12 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    //   semi: ['error', 'never'],
-    //   'comma-dangle': [2, 'never'],
-    //   'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    //   'no-use-before-define': [
-    //     'error',
-    //     { functions: true, classes: true, variables: false },
-    //   ],
+    semi: ['error', 'never'],
+    'comma-dangle': [2, 'never'],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'no-use-before-define': [
+      'error',
+      { functions: true, classes: true, variables: false },
+    ],
   },
 };
